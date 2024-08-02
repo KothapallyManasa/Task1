@@ -1,0 +1,211 @@
+kotha@Manuraj MINGW64 ~
+$ cd Downloads/
+
+kotha@Manuraj MINGW64 ~/Downloads
+$ ssh -i EC2_Demo.pem ec2-user@51.20.8.168
+
+A newer release of "Amazon Linux" is available.
+  Version 2023.5.20240730:
+Run "/usr/bin/dnf check-release-update" for full release and version update info
+   ,     #_
+   ~\_  ####_        Amazon Linux 2023
+  ~~  \_#####\
+  ~~     \###|
+  ~~       \#/ ___   https://aws.amazon.com/linux/amazon-linux-2023
+   ~~       V~' '->
+    ~~~         /
+      ~~._.   _/
+         _/ _/
+       _/m/'
+Last login: Fri Aug  2 08:18:29 2024 from 143.58.216.184
+[ec2-user@ip-172-31-44-16 ~]$ mkdir Manasa
+[ec2-user@ip-172-31-44-16 ~]$ sudo -i
+[root@ip-172-31-44-16 ~]# pwd
+/root
+[root@ip-172-31-44-16 ~]# cd
+[root@ip-172-31-44-16 ~]# ls
+[root@ip-172-31-44-16 ~]# whoami
+root
+[root@ip-172-31-44-16 ~]# ls
+[root@ip-172-31-44-16 ~]# sudo su -Manasa
+su: invalid option -- 'M'
+Try 'su --help' for more information.
+[root@ip-172-31-44-16 ~]# ls
+[root@ip-172-31-44-16 ~]#
+[root@ip-172-31-44-16 ~]#
+[root@ip-172-31-44-16 ~]#
+[root@ip-172-31-44-16 ~]#
+[root@ip-172-31-44-16 ~]#
+[root@ip-172-31-44-16 ~]# cd /Manasa
+-bash: cd: /Manasa: No such file or directory
+[root@ip-172-31-44-16 ~]# mkdir Manasa
+[root@ip-172-31-44-16 ~]# cd /Manasa
+-bash: cd: /Manasa: No such file or directory
+[root@ip-172-31-44-16 ~]#
+[root@ip-172-31-44-16 ~]# cd
+[root@ip-172-31-44-16 ~]# ls
+Manasa
+[root@ip-172-31-44-16 ~]# cd Manasa
+[root@ip-172-31-44-16 Manasa]# touch file{01..20}.txt
+[root@ip-172-31-44-16 Manasa]# l1
+-bash: l1: command not found
+[root@ip-172-31-44-16 Manasa]# ll
+total 0
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file01.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file02.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file03.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file04.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file05.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file06.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file07.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file08.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file09.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file10.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file11.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file12.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file13.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file14.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file15.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file16.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file17.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file18.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file19.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file20.txt
+[root@ip-172-31-44-16 Manasa]# mv file01.txt file01.yml
+[root@ip-172-31-44-16 Manasa]# ll
+total 0
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file01.yml
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file02.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file03.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file04.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file05.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file06.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file07.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file08.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file09.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file10.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file11.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file12.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file13.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file14.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file15.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file16.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file17.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file18.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file19.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file20.txt
+[root@ip-172-31-44-16 Manasa]# mv file02.txt file02.yml
+[root@ip-172-31-44-16 Manasa]# ll
+total 0
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file01.yml
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file02.yml
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file03.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file04.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file05.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file06.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file07.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file08.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file09.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file10.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file11.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file12.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file13.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file14.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file15.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file16.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file17.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file18.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file19.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file20.txt
+[root@ip-172-31-44-16 Manasa]# mv file03.txt file03.yml
+[root@ip-172-31-44-16 Manasa]# ll
+total 0
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file01.yml
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file02.yml
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file03.yml
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file04.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file05.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file06.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file07.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file08.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file09.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file10.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file11.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file12.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file13.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file14.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file15.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file16.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file17.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file18.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file19.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file20.txt
+[root@ip-172-31-44-16 Manasa]# mv file04.txt file04.yml
+[root@ip-172-31-44-16 Manasa]# ll
+total 0
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file01.yml
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file02.yml
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file03.yml
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file04.yml
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file05.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file06.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file07.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file08.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file09.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file10.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file11.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file12.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file13.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file14.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file15.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file16.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file17.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file18.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file19.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file20.txt
+[root@ip-172-31-44-16 Manasa]# mv file05.txt file05.yml
+[root@ip-172-31-44-16 Manasa]# ll
+total 0
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file01.yml
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file02.yml
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file03.yml
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file04.yml
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file05.yml
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file06.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file07.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file08.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file09.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file10.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file11.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file12.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file13.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file14.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file15.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file16.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file17.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file18.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file19.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file20.txt
+[root@ip-172-31-44-16 Manasa]# ls -ltrh
+total 0
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file20.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file19.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file18.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file17.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file16.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file15.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file14.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file13.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file12.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file11.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file10.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file09.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file08.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file07.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file06.txt
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file05.yml
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file04.yml
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file03.yml
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file02.yml
+-rw-r--r--. 1 root root 0 Aug  2 08:46 file01.yml
+[root@ip-172-31-44-16 Manasa]#

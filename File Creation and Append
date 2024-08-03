@@ -1,0 +1,48 @@
+kotha@Manuraj MINGW64 ~
+$ cd Downloads/
+
+kotha@Manuraj MINGW64 ~/Downloads
+$ ssh -i EC2_Demo.pem ec2-user@51.20.8.168
+
+A newer release of "Amazon Linux" is available.
+  Version 2023.5.20240730:
+Run "/usr/bin/dnf check-release-update" for full release and version update info
+   ,     #_
+   ~\_  ####_        Amazon Linux 2023
+  ~~  \_#####\
+  ~~     \###|
+  ~~       \#/ ___   https://aws.amazon.com/linux/amazon-linux-2023
+   ~~       V~' '->
+    ~~~         /
+      ~~._.   _/
+         _/ _/
+       _/m/'
+Last login: Fri Aug  2 09:20:25 2024 from 143.58.216.184
+[ec2-user@ip-172-31-44-16 ~]$ sudo su - root
+Last login: Fri Aug  2 09:25:28 UTC 2024 on pts/1
+[root@ip-172-31-44-16 ~]# mkdir my_folder
+[root@ip-172-31-44-16 ~]# cd /my_folder
+-bash: cd: /my_folder: No such file or directory
+[root@ip-172-31-44-16 ~]# cd
+[root@ip-172-31-44-16 ~]# ls
+Manasa  file01.txt  my_folder  output.txt
+[root@ip-172-31-44-16 ~]# touch my_file.txt
+[root@ip-172-31-44-16 ~]# nano my_file.txt
+[root@ip-172-31-44-16 ~]# touch another_file.txt
+[root@ip-172-31-44-16 ~]# nano another_file.txt
+[root@ip-172-31-44-16 ~]#
+[root@ip-172-31-44-16 ~]# cat my_file.txt
+This is my first line for this file
+[root@ip-172-31-44-16 ~]# cat another_file.txt
+this is my second line for this file
+
+[root@ip-172-31-44-16 ~]# cat another_file.txt >> my_file.txt
+[root@ip-172-31-44-16 ~]#
+[root@ip-172-31-44-16 ~]# ls
+Manasa  another_file.txt  file01.txt  my_file.txt  my_folder  output.txt
+[root@ip-172-31-44-16 ~]# cat my_file.txt
+This is my first line for this file
+this is my second line for this file
+
+[root@ip-172-31-44-16 ~]#
+
